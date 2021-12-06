@@ -6,3 +6,7 @@
 .page {
   width: 100%;
 }
+
+.to-right {
+  text-align: right;
+}

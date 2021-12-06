@@ -10,22 +10,21 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex'
 import ProjectItem from './ProjectItem.vue'
+
 export default {
   components: {
     ProjectItem,
   },
-  data() {
-    return {
-      projects: [
-        {
-          id: 1,
-          name: 'Project 1',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.',
-        },
-      ],
-    }
+  async fetch() {
+    await this.fetchProjects()
+  },
+  computed: {
+    ...mapState(['projects']),
+  },
+  methods: {
+    ...mapActions(['fetchProjects']),
   },
 }
 </script>

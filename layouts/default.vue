@@ -3,11 +3,12 @@
     <a-layout-sider v-model="collapsed" :trigger="null" collapsible>
       <div class="logo" />
       <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
-        <a-menu-item key="1">
+        <a-menu-item key="1" @click="$router.push('/projects')">
+          <a-icon type="project" />
           <span>Mis proyectos</span>
         </a-menu-item>
-        <a-menu-item key="2">
-          <a-icon type="config" />
+        <a-menu-item key="2" @click="$router.push('/settings')">
+          <a-icon type="setting" />
           <span>Configuración</span>
         </a-menu-item>
       </a-menu>

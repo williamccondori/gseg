@@ -1,0 +1,15 @@
+{
+  "providers": ["awscloudformation"],
+  "projectName": "gseg",
+  "version": "3.1",
+  "frontend": "javascript",
+  "javascript": {
+    "framework": "vue",
+    "config": {
+      "SourceDir": ".",
+      "DistributionDir": "dist",
+      "BuildCommand": "npm.cmd run-script build",
+      "StartCommand": ""
+    }
+  }
+}
