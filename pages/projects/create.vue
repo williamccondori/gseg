@@ -1,6 +1,10 @@
 <template>
   <a-space direction="vertical" size="large" class="page">
-    <a-page-header title="Nuevo proyecto" @back="$router.back()" />
+    <a-page-header
+      title="Nuevo proyecto"
+      class="page__header"
+      @back="$router.back()"
+    />
     <CreateProjectForm />
   </a-space>
 </template>

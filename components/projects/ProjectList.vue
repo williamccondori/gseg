@@ -18,7 +18,11 @@ export default {
     ProjectItem,
   },
   async fetch() {
-    await this.fetchProjects()
+    try {
+      await this.fetchProjects()
+    } catch (error) {
+      this.$message.error(error.message)
+    }
   },
   computed: {
     ...mapState(['projects']),

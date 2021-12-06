@@ -2,6 +2,7 @@ import { DataStore } from '@aws-amplify/datastore'
 import { Project } from '~/models'
 
 export const state = () => ({
+  project: null,
   projects: [],
 })
 
@@ -9,6 +10,10 @@ export const actions = {
   async fetchProjects({ commit }) {
     const projects = await DataStore.query(Project)
     commit('setProjects', projects)
+  },
+  async fetchProject({ commit }, id) {
+    const project = await DataStore.query(Project, id)
+    commit('setProject', project)
   },
   async createProject({ commit }, project) {
     await DataStore.save(
@@ -26,5 +31,8 @@ export const actions = {
 export const mutations = {
   setProjects(state, projects) {
     state.projects = projects
+  },
+  setProject(state, project) {
+    state.project = project
   },
 }

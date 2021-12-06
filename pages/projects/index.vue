@@ -1,9 +1,9 @@
 <template>
   <a-space direction="vertical" size="large" class="page">
+    <a-page-header title="Mis proyectos" class="page__header" />
     <a-button type="primary" @click="$router.push('/projects/create')">
       Nuevo proyecto
     </a-button>
-    <a-space />
     <ProjectList />
   </a-space>
 </template>

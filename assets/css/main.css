@@ -7,6 +7,12 @@
   width: 100%;
 }
 
+.page__header {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+}
+
 .to-right {
   text-align: right;
 }

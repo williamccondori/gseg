@@ -4,7 +4,7 @@
     :model="form"
     :rules="rules"
     :label-col="{ span: 8 }"
-    :wrapper-col="{ span: 16 }"
+    :wrapper-col="{ span: 10 }"
     @submit.prevent="submit"
   >
     <a-form-model-item label="Nombre" prop="name">
@@ -21,7 +21,7 @@
         placeholder="Ingrese la descripción del proyecto"
       />
     </a-form-model-item>
-    <a-form-model-item :wrapper-col="{ span: 16, offset: 8 }">
+    <a-form-model-item :wrapper-col="{ span: 10, offset: 8 }">
       <a-button type="primary" html-type="submit" :loading="isLoading">
         Crear proyecto
       </a-button>
