@@ -10,6 +10,11 @@
       "StackName": "amplify-gseg-staging-45723",
       "StackId": "arn:aws:cloudformation:us-west-2:688558942988:stack/amplify-gseg-staging-45723/006d3720-5651-11ec-ac1a-02ca360f9713",
       "AmplifyAppId": "dnynzxfi026n2"
+    },
+    "categories": {
+      "auth": {
+        "gsegd42d2655": {}
+      }
     }
   }
 }
